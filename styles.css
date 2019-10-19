@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.header {
+    /*background-image: linear-gradient(to right top, #ebe9eb, #eedeee, #f1d3f1, #f4c7f4, #f6bbf6);*/
+    background-image: url("image/bg-header.jpg");
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    /* position: absolute; */
+    /* bottom: 0; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.header .logo img {
+    width: 250px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 17%;
+}
+
+.section-banner {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content p {
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-size: 35px;
+    display: inline-block;
+    border-bottom: 3px solid #949405;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+.wishes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.wishe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.wishe img {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.wishe span {
+    font-size: 25px;
+}
+
+.section {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.section-wishes-for {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    background: pink;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-wishes-for img {
+    width: 30%;
+}
+
+.section-wishes-for p {
+    text-align: center;
+    line-height: 60px;
+    width: 70%;
+    padding: 10px;
+}
+
+.divide {
+    width: 200px;
+    /* height: 100px; */
+    border-bottom: 5px dashed;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.section-for-my-girl {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-wishes-for {
+        flex-direction: column;
+    }
+    .section-wishes-for img {
+        width: 100%
+    }
+    .section-wishes-for p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-wishes {
+        flex-direction: column;
+    }
+    .wishe {
+        width: 100%;
+    }
+}
