@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Women day</title>
+    <link rel="shortcut icon" href="image/favicon.ico" />
 
     <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
     <!--my stlyle-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--animation-->
+    <!--animation-->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
 </head>
 
 <body>
@@ -21,8 +27,11 @@
             <img src="image/logo.png" alt="">
         </div>
         <div class="section-banner">
-            <div class="content">
+            <div data-wow-duration="2.5s" class="content wow flash">
                 <p>Chúc các bạn nữ một ngày ý nghĩa <br> vui vẻ và thành công trong cuộc sống </p>
+                <audio autoplay controls>
+                    <source src="audio/ganhme.mp3" type="audio/mpeg">
+                  </audio>
             </div>
         </div>
     </div>
@@ -32,15 +41,15 @@
             <h3>Luôn luôn</h3>
         </div>
         <div class="wishes">
-            <div class="wishe">
+            <div data-wow-duration="2.5s" class="wishe wow bounceInLeft">
                 <img src="image/heart.png" alt="">
                 <span>Thật nhiều sức khỏe</span>
             </div>
-            <div class="wishe">
+            <div data-wow-duration="2.5s" class="wishe wow bounceInUp">
                 <img src="image/smile.png" alt="">
                 <span>Tràn ngập niềm vui</span>
             </div>
-            <div class="wishe">
+            <div data-wow-duration="2.5s" class="wishe wow bounceInRight">
                 <img src="image/money.png" alt="">
                 <span>Tiền vào đầy túi</span>
             </div>
@@ -48,16 +57,16 @@
 
 
         <div class="section section-wishes-for">
-            <img src="image/mother.jpg" alt="">
+            <img data-wow-duration="2.5s" class="wow bounceInLeft" src="image/mother.jpg" alt="">
             <!--<p> " Mẹ là món quà quý giá nhất mà trời đã ban cho con. Con chúc mẹ luôn vui vẻ, hạnh phúc và mãi mãi là người mẹ tốt nhất của chúng con. <br>Yêu mẹ!""
             </p>-->
-            <p>Chưa bao giờ con viết trọn bài thơ về Mẹ<br> Bởi chẳng đủ ngôn từ … để kể hết lòng Mẹ bao la<br> Mẹ – người đàn bà cả đời hứng giông bão phong ba<br> Che chở các con, nhẹ nhàng nâng niu con từng bước<br><span>Tác giả: Hương Lan</span></p>
+            <p data-wow-duration="2.5s" class="wow bounceInRight">Chưa bao giờ con viết trọn bài thơ về Mẹ<br> Bởi chẳng đủ ngôn từ … để kể hết lòng Mẹ bao la<br> Mẹ – người đàn bà cả đời hứng giông bão phong ba<br> Che chở các con, nhẹ nhàng nâng niu con từng bước<br><span>Tác giả: Hương Lan</span></p>
         </div>
         <div class="divide"></div>
         <div class="section section-wishes-for" style="background: wheat;">
-            <p>Ngày 20/10 đến rồi, chúc cho chị em ngày Phụ nữ Việt Nam vui vẻ, hạnh phúc. Chúc cho chị em có chồng được chồng quan tâm, chiều chuộng và chúc cho chị em chưa có người thương thì sau hôm nay sẽ tìm thấy được một nửa yêu thương của mình. Happy
+            <p data-wow-duration="2.5s" class="wow bounceInLeft">Ngày 20/10 đến rồi, chúc cho chị em ngày Phụ nữ Việt Nam vui vẻ, hạnh phúc. Chúc cho chị em có chồng được chồng quan tâm, chiều chuộng và chúc cho chị em chưa có người thương thì sau hôm nay sẽ tìm thấy được một nửa yêu thương của mình. Happy
                 Vietnamese Women's Day.</p>
-            <img src="image/girl.jpg" alt="">
+            <img data-wow-duration="2.5s" class="wow bounceInRight" src="image/girl.jpg" alt="">
         </div>
         <div class="section-for-my-girl">
             <span><strong>For my girl:</strong> I hope you are happy </span>
@@ -67,6 +76,11 @@
             <h3>De Vich Hoang</h3>
         </div>
     </div>
+
+    <!--Script-->
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="scripts.js"></script>
 </body>
